@@ -1,0 +1,538 @@
+[{
+		"title": "navigation",
+		"description": "Navigation commands in Vim, and you can also move using the arrow keys",
+		"keys": [{
+				"keyChar": "h",
+				"description": "Move left",
+				"level": 0
+			},
+			{
+				"keyChar": "j",
+				"description": "Move down",
+				"level": 0
+			},
+			{
+				"keyChar": "k",
+				"description": "Move up",
+				"level": 0
+			},
+			{
+				"keyChar": "l",
+				"description": "Move right",
+				"level": 0
+			},
+			{
+				"keyChar": "w",
+				"description": "Jump forward to the start of a word",
+				"level": 0,
+				"tip": " w and W are both cursor movement commands that move the cursor forward to the next word. The key difference lies in how they handle punctuation and whitespace. The w command treats punctuation as separate words and moves the cursor to the next word or punctuation. On the other hand, W skips over punctuation and treats a sequence of letters, digits, and underscores, separated by whitespace, as a single word. Thus, w offers a more granular movement, stopping at each punctuation mark, whereas W provides a broader movement, jumping directly to the next whitespace-separated word."
+			},
+
+			{
+				"keyChar": "e",
+				"description": "Jump forward to the end of a word",
+				"level": 0,
+				"tip": "e and E are cursor movement commands that move the cursor to the end of the current word. The difference lies in how they handle punctuation and whitespace. The e command treats punctuation as separate words, moving the cursor to the end of the current word or punctuation mark. Conversely, E skips over punctuation and treats a sequence of letters, digits, and underscores, separated by whitespace, as a single word, moving the cursor to the end of this sequence. In essence, e provides finer control, stopping at each punctuation mark within a word, while E offers broader control, moving directly to the end of the whitespace-separated word."
+			},
+
+			{
+				"keyChar": "b",
+				"description": "Jump backward to the start of a word",
+				"level": 0,
+				"tip": "b and B are cursor movement commands that move the cursor backward to the start of the current word. The difference lies in how they handle punctuation and whitespace. The b command treats punctuation as separate words, moving the cursor to the start of the current word or punctuation mark. Conversely, B skips over punctuation and treats a sequence of letters, digits, and underscores, separated by whitespace, as a single word, moving the cursor to the start of this sequence. In essence, b provides finer control, stopping at each punctuation mark within a word, while B offers broader control, moving directly to the start of the whitespace-separated word."
+			},
+
+			{
+				"keyChar": "0",
+				"description": "Jump to the start of the line",
+				"level": 0
+			},
+			{
+				"keyChar": "^",
+				"description": "Jump to the first non-whitespace character of the line",
+				"level": 0
+			},
+			{
+				"keyChar": "$",
+				"description": "Jump to the end of the line",
+				"level": 0
+			},
+			{
+				"keyChar": "gg",
+				"description": "Go to the first line of the document",
+				"level": 0
+			},
+			{
+				"keyChar": "G",
+				"description": "Go to the last line of the document",
+				"level": 0
+			},
+			{
+				"keyChar": "5G",
+				"description": "Go to line 5",
+				"level": 0
+			},
+			{
+				"keyChar": "fx",
+				"description": "Jump to next occurrence of character x",
+				"level": 0
+			},
+			{
+				"keyChar": "tx",
+				"description": "Jump to before next occurrence of character x",
+				"level": 0
+			},
+			{
+				"keyChar": "Fx",
+				"description": "Jump to previous occurrence of character x",
+				"level": 0
+			},
+			{
+				"keyChar": "H",
+				"description": "Jump to the top of the screen",
+				"level": 0
+			},
+			{
+				"keyChar": "M",
+				"description": "Jump to the middle of the screen",
+				"level": 0
+			},
+			{
+				"keyChar": "L",
+				"description": "Jump to the bottom of the screen",
+				"level": 0
+			},
+			{
+				"keyChar": ":n",
+				"description": "Jump to nth line of the file",
+				"level": 0
+			},
+			{
+				"keyChar": "%",
+				"description": "Jump to matching bracket { } [ ] ( )",
+				"level": 0
+			}
+
+		]
+	},
+	{
+		"title": "editing",
+		"description": "Editing commands in Vim",
+		"keys": [{
+				"keyChar": "i",
+				"description": "Insert mode",
+				"level": 0
+			},
+			{
+				"keyChar": "a",
+				"description": "Append mode",
+				"level": 0
+			},
+			{
+				"keyChar": "x",
+				"description": "Delete character",
+				"level": 0
+			},
+			{
+				"keyChar": "dd",
+				"description": "Delete line",
+				"level": 0
+			},
+            {
+                "keyChar": "o",
+                "description": "Open a new line below the current line",
+                "level": 0
+            },
+            {   
+                "keyChar": "O",
+                "description": "Open a new line above the current line",
+                "level": 0
+            },
+            {
+                "keyChar": "r",
+                "description": "Replace character",
+                "level": 0
+            },
+            {
+                "keyChar": "U",
+                "description": "Undo all changes to the line",
+                "level": 0
+            },
+            {
+                "keyChar": "Ctrl+R",
+                "description": "Redo all changes to the line",
+                "level": 0
+            }
+		]
+	},
+	{
+		"title": "Opening, closing and saving",
+		"description": "Commands for opening, closing, and saving files in Vim",
+		"keys": [{
+				"keyChar": ":e <file>",
+				"description": "Open a file",
+				"level": 0
+			},
+			{
+				"keyChar": ":w",
+				"description": "Save changes",
+				"level": 0
+			},
+			{
+				"keyChar": ":q",
+				"description": "Quit Vim",
+				"level": 0
+			},
+            {
+                "keyChar": ":wq",
+                "description": "Save and quit Vim",
+                "level": 0
+            },
+            {
+                "keyChar": ":q!",
+                "description": "Quit Vim without saving changes",
+                "level": 0
+            },
+            { 
+                "keyChar": ":w <file>",
+                "description": "Save file as <file>",
+                "level": 0
+            },
+            {
+                "keyChar": ":wq <file>",
+                "description": "Save file as <file> and quit Vim",
+                "level": 0
+            },
+            {
+                "keyChar": ":sav <file>",
+                "description": "Save file as <file> and open a new buffer",
+                "level": 0
+            },
+            {
+                "keyChar": ":x",
+                "description": "Save changes and quit Vim",
+                "level": 0
+            }
+
+		]
+	},
+	{
+		"title": "Mode Switching",
+		"description": "Commands for switching between different modes in Vim",
+		"keys": [
+            {
+                "keyChar": "v",
+                "description": "Switch to Visual mode",
+                "level": 0
+            },
+            {
+        "keyChar": "V",
+        "description": "Switch to Visual Line mode",
+        "level": 0
+            },
+            {
+        "keyChar": ":",
+        "description": "Switch to Command-line mode",
+        "level": 0
+            },
+            {
+        "keyChar": "R",
+        "description": "Switch to Replace mode",
+        "level": 0
+            },
+            {
+        "keyChar": "Esc+Esc",
+        "description": "Switch to Normal mode",
+        "level": 0
+            },
+            {
+				"keyChar": "Esc",
+				"description": "Switch to Normal mode",
+				"level": 0
+			},
+			{
+				"keyChar": "i",
+				"description": "Switch to Insert mode",
+				"level": 0
+			},
+			{
+				"keyChar": ":",
+				"description": "Switch to Command-line mode",
+				"level": 0
+			}
+		]
+	},
+	{
+		"title": "Copy/Pasting",
+		"description": "Commands for copying and pasting text in Vim",
+		"keys": [
+            {
+                "keyChar": "y",
+                "description": "Yank (copy) text",
+                "level": 0
+            },
+            {
+                "keyChar": "P",
+                "description": "Paste text before cursor",
+                "level": 0
+            },
+            {
+                "keyChar": "c",
+                "description": "Change text",
+                "level": 0
+
+           },
+            {
+                "keyChar": "C",
+                "description": "Change text to end of line",
+                "level": 0
+            },
+            
+            {
+				"keyChar": "yy",
+				"description": "Copy line",
+				"level": 0
+			},
+			{
+				"keyChar": "p",
+				"description": "Paste",
+				"level": 0
+			},
+            {
+                "keyChar": "cw",
+                "description": "Change word",
+                "level": 0
+            },
+            {
+                "keyChar": "c4w",
+
+                "description": "Change 4 words",
+                "level": 0
+            },
+            {
+                "keyChar": "c4l",
+                "description": "Change 4 characters",
+                "level": 0
+            },
+            {
+                "keyChar": "cc",
+                "description": "Change line",
+                "level": 0
+            },
+            {
+                "keyChar": "4x",
+                "description": "Delete 4 characters",
+                "level": 0
+            },
+            {
+                "keyChar": "4p",
+                "description": "Paste 4 times",
+                "level": 0
+            },
+            {
+                "keyChar": ":set paste",
+                "description": "Paste text without auto-indent",
+                "level": 0
+            },
+            {
+                "keyChar": ":set nopaste",
+                "description": "Paste text with auto-indent",
+                "level": 0
+            },
+            {
+                "keyChar": "Ctrl+Shift+V",
+                "description": "Paste text from clipboard",
+                "level": 0
+            }
+		]
+	},
+	{
+		"title": "Replace",
+		"description": "Commands for replacing text in Vim",
+		"keys": [
+            {
+                "keyChar": ":s/foo/bar/",
+                "description": "Replace first instance of 'foo' with 'bar' in current line",
+                "level": 0
+            },
+            {
+                "keyChar": "[range]s/foo/bar/[flags]",
+                "description": "Replace 'foo' with 'bar' in [range] with [flags]",
+                "level": 0
+            },
+            {
+                "keyChar": "%",
+                "description": "Replace 'foo' with 'bar' in entire file",
+                "level": 0
+            },
+            {
+                "keyChar": "'<,'>",
+                "description": "Replace 'foo' with 'bar' in selected lines",
+                "level": 0
+            },
+            {
+                "keyChar": "25",
+                "description": "Replace 'foo' with 'bar' in lines 2-5",
+                "level": 0
+            },
+            {
+                "keyChar": "25,50",
+                "description": "Replace 'foo' with 'bar' in lines 25-50",
+                "level": 0
+            },
+            {
+                "keyChar": "$",
+                "description": "Replace 'foo' with 'bar' in lines 25-end",
+                "level": 0
+            },
+            {
+                "keyChar": ".",
+                "description": "Replace 'foo' with 'bar' in current line",
+                "level": 0
+            },
+            {
+                "keyChar": ",+2",
+                "description": "Replace 'foo' with 'bar' in current line and next 2 lines", 
+                "level": 0
+            },
+            {
+                "keyChar": "-2",
+                "description": "Replace 'foo' with 'bar' in current line and previous 2 lines",
+                "level": 0
+            },
+            {
+                "keyChar": "g",
+                "description": "Replace all instances of 'foo' with 'bar' in current line",
+                "level": 0
+            },
+            {
+                "keyChar": "i",
+                "description": "Replace all instances of 'foo' with 'bar' in current line, case-insensitive",
+                "level": 0
+            },
+            {
+                "keyChar": "c",
+                "description": "Confirm each replace",
+                "level": 0
+            }
+		]
+	},
+	{
+		"title": "Search",
+		"description": "Commands for searching text in Vim",
+		"keys": [
+
+            {
+                "keyChar": "*",
+                "description": "Search for word under cursor",
+                "level": 0
+            },
+            {
+                "keyChar": "#",
+                "description": "Search for word under cursor backwards",
+                "level": 0
+            },
+            {
+                "keyChar": "n",
+                "description": "Jump to next match",
+                "level": 0
+            },
+            {
+                "keyChar": "N",
+                "description": "Jump to previous match",
+                "level": 0
+            },
+            {
+                "keyChar": "/<word>\c",
+                "description": "Search for word, case-insensitive",
+                "level": 0
+            },
+            {
+                "keyChar": "/\<word>\>",
+                "description": "Search for word, whole word only",
+                "level": 0
+            },
+            {
+                "keyChar": ":noh",
+                "description": "Remove highlighting of search matches",
+                "level": 0
+            },
+            {
+				"keyChar": "/<pattern>",
+				"description": "Search forward for pattern",
+				"level": 0
+			},
+			{
+				"keyChar": "?<pattern>",
+				"description": "Search backward for pattern",
+				"level": 0
+			}
+		]
+	},
+	{
+		"title": "Handy tricks",
+		"description": "Useful tricks and shortcuts in Vim",
+		"keys": [
+            {
+                "keyChar": "~",
+                "description": "Switch case of current character",
+                "level": 0
+            },
+            {
+                "keyChar": "xp",
+                "description": "Swap current character with next",
+                "level": 0
+            },
+            {
+                "keyChar": "J",
+                "description": "Join current line with next",
+                "level": 0
+            },
+            {
+                "keyChar": ":Ni!",
+                "description": "Repeat last command 'i' N times",
+                "level": 0
+            },
+            {
+                "keyChar": ":help",
+                "description": "Open Vim's built-in help",
+                "level": 0
+            },
+            {
+                "keyChar": ":help <command>",
+                "description": "Open Vim's built-in help for <command>",
+                "level": 0
+            },
+            {
+				"keyChar": "u",
+				"description": "Undo",
+				"level": 0
+			},
+			{
+				"keyChar": "Ctrl + r",
+				"description": "Redo",
+				"level": 0
+			},
+			{
+				"keyChar": ":set number",
+				"description": "Enable line numbering",
+				"level": 0
+			}
+		]
+	},
+	{
+		"title": "Resources",
+		"description": "Helpful resources for learning Vim",
+		"keys": [{
+				"keyChar": ":help",
+				"description": "Open Vim's built-in help",
+				"level": 0
+			},
+			{
+				"keyChar": "vimtutor",
+				"description": "Launch Vim's interactive tutorial",
+				"level": 0
+			}
+		]
+	}
+]
