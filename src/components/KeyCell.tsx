@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface KeyCellProps {
     keyChar: string;
@@ -7,16 +7,15 @@ interface KeyCellProps {
 
 const KeyCell: React.FC<KeyCellProps> = ({ keyChar, description }) => {
     return (
-        <div className="flex-shrink-0 w-full h-full">
-            <h1 className="text-white text-4xl md:text-6xl lg:text-4xl tracking-wide pl-4">
+        <div className="flex justify-left items-center w-full h-full my-2">
+            <div className="text-white text-base w-10 tracking-wide pl-4">
                 {keyChar}
-            </h1>
-            <h1 className="text-white text-4xl md:text-6xl lg:text-4xl tracking-wide pl-4">
+            </div>
+            <div className="text-white text-sm text-left tracking-wide pl-4">
                 {description}
-            </h1>
+            </div>
         </div>
     );
 };
 
 export default KeyCell;
-
