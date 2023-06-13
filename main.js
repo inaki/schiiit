@@ -11,7 +11,9 @@ const createWindow = () => {
         width: windowWidth,
         height: windowHeight,
         transparent: true, // Set the window to be transparent
-        frame: true, // Remove the window frame
+        frame: false, // Remove the window frame
+        resizable: false,
+        fullscreenable: false,
         webPreferences: {
             preload: path.join(__dirname, "preload.js"),
         },

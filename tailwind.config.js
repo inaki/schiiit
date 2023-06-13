@@ -2,35 +2,17 @@
 module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                primary: "var(--color-primary)",
+                secondary: "var(--color-secondary)",
+                background: "var(--color-background)",
+                color: "var(--color-color)",
+                "text-secondary": "var(--color-text-secondary)",
+                "text-tertiary": "var(--color-text-tertiary)",
+            },
+        },
     },
     variants: {},
-    plugins: [
-        {
-            // This plugin will add the @layer directive to Tailwind CSS
-            name: "layer",
-            function() {
-                return {
-                    "@layer": function (name) {
-                        return {
-                            [name]: {},
-                        };
-                    },
-                };
-            },
-        },
-        {
-            // This plugin will add the @mixin directive to Tailwind CSS
-            name: "mixin",
-            function() {
-                return {
-                    "@mixin": function (name, args) {
-                        return {
-                            [name]: args,
-                        };
-                    },
-                };
-            },
-        },
-    ],
+    plugins: [],
 };

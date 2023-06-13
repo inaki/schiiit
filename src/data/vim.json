@@ -49,11 +49,7 @@
                 "description": "Jump to the start of the line",
                 "level": 0
             },
-            {
-                "cmd": "^",
-                "description": "Jump to the first non-whitespace character of the line",
-                "level": 0
-            },
+
             {
                 "cmd": "$",
                 "description": "Jump to the end of the line",
@@ -67,26 +63,6 @@
             {
                 "cmd": "G",
                 "description": "Go to the last line of the document",
-                "level": 0
-            },
-            {
-                "cmd": "5G",
-                "description": "Go to line 5",
-                "level": 0
-            },
-            {
-                "cmd": "fx",
-                "description": "Jump to next occurrence of character x",
-                "level": 0
-            },
-            {
-                "cmd": "tx",
-                "description": "Jump to before next occurrence of character x",
-                "level": 0
-            },
-            {
-                "cmd": "Fx",
-                "description": "Jump to previous occurrence of character x",
                 "level": 0
             },
             {
@@ -142,12 +118,12 @@
             },
             {
                 "cmd": "o",
-                "description": "Open a new line below the current line",
+                "description": "Open new line below current line",
                 "level": 0
             },
             {
                 "cmd": "O",
-                "description": "Open a new line above the current line",
+                "description": "Open new line above current line",
                 "level": 0
             },
             {
@@ -168,7 +144,7 @@
         ]
     },
     {
-        "title": "Opening, closing and saving",
+        "title": "opening, closing and saving",
         "description": "Commands for opening, closing, and saving files in Vim",
         "keyChars": [
             {
@@ -182,18 +158,23 @@
                 "level": 0
             },
             {
-                "cmd": ":q",
-                "description": "Quit Vim",
-                "level": 0
-            },
-            {
                 "cmd": ":wq",
                 "description": "Save and quit Vim",
                 "level": 0
             },
             {
+                "cmd": ":q",
+                "description": "Quit Vim",
+                "level": 0
+            },
+            {
                 "cmd": ":q!",
                 "description": "Quit Vim without saving changes",
+                "level": 0
+            },
+            {
+                "cmd": ":x",
+                "description": "Save changes and quit Vim",
                 "level": 0
             },
             {
@@ -204,16 +185,6 @@
             {
                 "cmd": ":wq <file>",
                 "description": "Save file as <file> and quit Vim",
-                "level": 0
-            },
-            {
-                "cmd": ":sav <file>",
-                "description": "Save file as <file> and open a new buffer",
-                "level": 0
-            },
-            {
-                "cmd": ":x",
-                "description": "Save changes and quit Vim",
                 "level": 0
             }
         ]
@@ -265,7 +236,7 @@
         ]
     },
     {
-        "title": "Copy/Pasting",
+        "title": "copy/pasting",
         "description": "Commands for copying and pasting text in Vim",
         "keyChars": [
             {
@@ -333,11 +304,6 @@
             {
                 "cmd": ":set paste",
                 "description": "Paste text without auto-indent",
-                "level": 0
-            },
-            {
-                "cmd": ":set nopaste",
-                "description": "Paste text with auto-indent",
                 "level": 0
             },
             {
